@@ -835,7 +835,7 @@ function NavBar() {
                   <li>Sinks</li>
                   <li>
                     {" "}
-                    <Link to="/home">Water Filtration</Link>
+                    <Link to="/plp">Water Filtration</Link>
                   </li>
                   <li>Accessories</li>
                   <li>Garbage Disposals</li>
