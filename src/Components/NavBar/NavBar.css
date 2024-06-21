@@ -1,0 +1,378 @@
+.Nav-bottom {
+  font-family: helvetica;
+  font-size: 14px;
+  z-index: 200;
+  position: absolute;
+  display: inline;
+  top: 0;
+  max-width:100vw;
+  max-height:100vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 45px;
+  padding: 0px 0px 10px 15px;
+  color: rgb(249, 247, 247);
+  background-color: transparent;
+  transition: background-color 500ms ease-in-out;
+}
+.Nav-bottom:hover {
+  background-color: rgb(232, 230, 230);
+
+
+  color: black;
+}
+.Nav-bottom:hover #products {
+  border-right: 1px solid #d6cfcf;
+}
+.min{
+  display: none;
+}
+#logo {
+  position: absolute;
+  padding: 15px;
+  width: 100px;
+}
+ul a:hover {
+  color: black;
+}
+.Nav-bottom ul {
+  margin-left: 100px;
+  padding-top: 8px;
+}
+.Nav-bottom ul:last-child li img {
+  padding-right: 40px;
+}
+.Nav-bottom ul:last-child {
+  margin-top: 15px;
+  margin-right: 60px;
+  font-size: 15px;
+}
+#searchtext {
+  
+  margin-right: -15px;
+
+}
+.Nav-bottom ul li {
+  list-style-type: none;
+  text-align: left;
+  padding-right:20px;
+  display: inline;
+}
+
+#products {
+  padding: 8px 10px;
+  padding-right: 30px;
+  margin-right: 15px;
+  border-right: 1px solid white;
+}
+.menu{
+  position:absolute;
+  z-index:1000;
+  top:16vh;
+height:100vh;
+width:100%;
+font-family: helvetica;
+}
+.menu > div{
+  display:flex;
+  flex-direction: row;
+  min-height:70%;
+  background: white;
+
+ 
+}
+.menu__heading{
+  font-weight: 0 !important;
+  font-size:40px;
+  color:black;
+  min-height:70%;
+ width:25vw;
+  letter-spacing: -0.5px;
+  margin-top:70px;
+  padding:0px 4% 0 30px;
+  border-right: 1px solid #cdcdcd;
+}
+.menu__options li{
+  display: block;
+  line-height: 2;
+  color:#767474;
+  font-size: 14.5px;
+}
+.menu__options li:hover{
+  color:black;
+transform:translate(0px,-2px);
+font-weight: 550;
+
+}
+.menu__options{
+  padding:25px 60px 0 40px;
+  margin-top:50px;
+width:20vw;
+}
+
+.menu-1__image{
+  animation-delay: 1s;
+  animation: background-image-1 2s;
+  animation-fill-mode: forwards;
+  width:45vw;
+ 
+  background-size: cover;
+  background-position: center center;
+
+}
+.menu-2__image{
+  animation-delay: 1s;
+  animation: background-image-2 2s;
+  animation-fill-mode: forwards;
+  min-width:45%;
+ 
+  background-size: cover;
+  background-position: center center;
+
+}
+.menu-3__image{
+  animation-delay: 1s;
+  animation: background-image-3 2s;
+  animation-fill-mode: forwards;
+  min-width:45%;
+ 
+  background-size: cover;
+  background-position: center center;
+
+}
+.menu-5__image{
+  animation-delay: 1s;
+  animation: background-image-4 2s;
+  animation-fill-mode: forwards;
+  min-width:45%;
+ 
+  background-size: cover;
+  background-position: center center;
+
+}
+.menu-4__image{
+  animation-delay: 1s;
+  animation: background-image-5 2s;
+  animation-fill-mode: forwards;
+  min-width:45%;
+ 
+  background-size: cover;
+  background-position: center center;
+
+}
+@keyframes background-image-1{
+
+ 100%{
+    background-image: url(../../assets/image-16.svg);
+  }
+}
+@keyframes background-image-2{
+
+  100%{
+     background-image: url(../../assets/image-17.svg);
+   }
+ }
+ @keyframes background-image-3{
+
+  100%{
+     background-image: url(../../assets/image-18.svg);
+   }
+ }
+ @keyframes background-image-4{
+
+  100%{
+     background-image: url(../../assets/image-20.svg);
+   }
+ }
+ @keyframes background-image-5{
+
+  100%{
+     background-image: url(../../assets/image-19.svg);
+   }
+ }
+
+ .sidebar{
+  background-color: rgba(0,0,0, 0.4);
+  z-index:10000;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  min-width:100%;
+font-size: 14px;
+  font-family: helvetica;
+  height:100vh;
+  left:0;
+  overflow-y: scroll;
+
+  color:#767474;
+ margin-top:46px;
+
+ }
+ .sidebar__content{
+  min-width:25%;
+  background-color: white;
+  line-height:2;
+  display: block;
+  padding:20px 0px;
+  height: 100%;
+  font-style:bold;
+
+ }
+ @keyframes content-load {
+  100%{
+    color:#767474;
+  }
+ }
+ .sidebar_expand{
+  position: relative;
+  min-width:25%;
+  font-size: 14.5px;
+  background-color: #f9f9f9;
+  line-height:2;
+  animation-delay: 1s;
+  animation: content-load 1s linear;
+  animation-fill-mode: forwards;
+  padding:20px 30px;
+  height: 100%;
+  color:transparent
+ }
+ .sidebar_expand li{
+  display: block;
+ }
+
+ .sidebar__content li{
+  display: block;
+ }
+
+ .sidebar__content li:hover{
+
+ color: black;
+ transform:translate(-0.3px,0)
+ }
+ .sidebar_expand li:hover{
+
+  color: black;
+  transform:translate(-0.3px,0)
+  }
+ .sidebar_close{
+  width:70px;
+  height:85px;
+  color: white;
+  font-size: 65px;
+  margin:30px 0 0 50px;
+  background-color: transparent;
+  
+ }
+
+ .sidebar__image{
+min-width: 20%;
+height:100% ;
+padding-top:5vh;
+background-color: #dcdbdb;
+/* fill: #dcdbdb; */
+animation-delay: 2s;
+  animation:image-load 800ms linear;
+  animation-fill-mode: forwards;
+
+ }
+
+ .sidebar__image img{
+  height:50vh;
+  width:100%;
+opacity: 0;
+animation-delay: 2s;
+  animation:image-load 500ms ease-in-out;
+  animation-fill-mode: forwards;
+ }
+ @keyframes image-load{
+
+  100%{
+
+    background-color: #f9f9f9;
+     opacity:1;
+    
+  }
+}
+.min{
+  display: none;
+}
+
+@media screen and (max-width:720px){
+  .min{
+display: block;
+background-color: rgb(232, 230, 230);
+height: 65px;
+position: relative;
+padding:7px 0 20px 10px;
+color: black;
+box-sizing: border-box;
+  }
+  .max{
+    display: none;
+
+  }
+  #burger{
+   position: absolute;
+    width:35px;
+    height: 100%;
+    top:20px;
+    margin-left: 10px;
+  }
+  #brand-logo{
+    height:60%;
+    margin-top:10px;
+    margin-left: 35px;  
+  }
+  #burger-icons{
+    position: absolute;
+    right:20px;
+    top:18px;
+
+  }
+  #burger-icons{
+display: flex;
+gap:18px;
+  }
+  #s-icon{
+    margin-left:-13px;
+  }
+   
+  .sidebar{
+    margin: 0;
+   top: 0px;
+    background-color: #163123;
+    position: fixed;
+     padding-top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+   .sidebar *{
+  
+    background-color: #163123;
+    color:#cdcdcd;
+    font-size:24px;
+    margin-bottom:20px;
+    letter-spacing: 0.34px;
+  }
+    
+  .sidebar *:hover{
+color:white;
+  }
+
+
+  .sidebar_close{
+    position: absolute;
+    left:0px;
+    top:-10px;
+    height:85px;
+    background-color: transparent;
+  }
+  .menu-icon{
+    color:white;
+    font-size: 14px;;
+  }
+  
+}
